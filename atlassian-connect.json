@@ -1,0 +1,94 @@
+{
+    "key": "TeamleadTask",
+    "name": "TeamleadTask",
+    "description": "TestTask",
+    "baseUrl": "{{localBaseUrl}}",
+    "authentication": {
+        "type": "jwt"
+    },
+    "lifecycle": {
+        "installed": "/installed"
+    },
+    "scopes": [
+        "READ"
+    ],
+    "apiMigrations":{
+        "signed-install": true
+    },
+    "modules": {
+        "generalPages": 
+        [
+            {
+                "key":"TeamleadTaskGeneralPages",
+                "url":"/teamlead-task",
+                    "name": {
+                        "value":"Teamlead Task"
+                    }
+            }
+        ],
+        "webPanels": [
+          {
+            "url": "/chuck-norris-jokes",
+            "location": "atl.jira.view.issue.right.context",
+            "layout": {
+              "width": "90%",
+              "height": "90%"
+            },
+            "supportsNative": false,
+            "name": {
+              "value": "Chuck Norris jokes"
+            },
+            "key": "chuckNorrisJokes"
+          }
+        ],
+        "jiraProjectPages": [
+            {
+              "key": "TeamleadTaskJiraProjectPages",
+              "url": "/teamlead-task",
+              "name": {
+                "value": "Teamlead Task"
+              }
+            }
+          ],
+
+        "jiraProjectAdminTabPanels": [
+            {
+              "location": "projectgroup1",
+              "url": "/settings",
+              "name": {
+                "value": "Teamlead Task"
+              },
+              "key": "TeamleadTaskAdminTabPanels"
+            }
+          ],
+          "webSections": [
+            {
+                "key": "admin-plugins-menu",
+                "location": "admin_plugins_menu",
+                "name": {
+                    "value": "Teamlead Task"
+                }
+            }
+        ],
+        "webItems": [
+          {
+              "key": "admin-plugins-menu-settings",
+              "location": "admin_plugins_menu/admin-plugins-menu",
+              "name": {
+                  "value": "Settings"
+              },
+              "url": "/settings"
+          }
+      ],
+          "configurePage": {
+            "url": "/settings",
+            "name": {
+              "value": "Teamlead Task Settings"
+            },
+            "key": "TeamleadTaskSettingsPage",
+            "location": "admin_plugins_menu/example-menu-section"
+          }
+          
+          
+    }
+}
