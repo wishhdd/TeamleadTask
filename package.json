@@ -27,6 +27,7 @@
     "@atlaskit/tabs": "^13.2.4",
     "@atlaskit/toggle": "^12.3.1",
     "@forge/ui": "^0.16.0",
+    "atlas-connect": "^0.8.1",
     "atlassian-connect-express": "^7.4.7",
     "axios": "^0.24.0",
     "babel-polyfill": "^6.26.0",
@@ -41,10 +42,11 @@
     "morgan": "^1.10.0",
     "nocache": "^2.1.0",
     "node-fetch": "^3.1.0",
+    "pg": "^8.7.1",
     "react": "^16.14.0",
     "react-dom": "^16.14.0",
     "regenerator-runtime": "^0.13.9",
-    "sequelize": "^6.3.5",
+    "sequelize": "^6.12.4",
     "styled-components": "^5.2.0"
   },
   "devDependencies": {

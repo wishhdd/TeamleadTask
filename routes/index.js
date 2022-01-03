@@ -20,6 +20,4 @@ export default function routes(app, addon) {
       title: "Chuck Norris jokes",
     });
   });
-
-  // Add additional route handlers here...
 }
